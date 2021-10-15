@@ -1,0 +1,40 @@
+// Setup
+function phoneticLookup(val) {
+  var result = "";
+
+  // Only change code below this line
+   var lookup = {
+    "alpha": "Adams",
+    "bravo": "Boston",
+    "charlie": "Chicago",
+    "delta": "Denver",
+    "echo": "Easy",
+    "foxtrot": "Frank"
+  };
+
+  result=lookup[val];
+  // Only change code above this line
+  return result;
+}
+
+phoneticLookup("charlie");
+
+
+// Setup
+var obj = {
+  gift: "pony",
+  pet: "kitten",
+  bed: "sleigh"
+};
+
+function checkObj(obj,checkProp) {
+  // Your Code Here
+  if (obj.hasOwnProperty(checkProp)) 
+  return obj[checkProp]; // If true return the prop
+
+  return "Not Found";
+}
+
+// Test your code by modifying these values
+checkObj("gift");
+
